@@ -19,3 +19,4 @@ git push -u origin main
 
 note : Used for to add , commit,push
 git add . ; git commit -m "some-message"; git push -u origin main
+ .-- represent add anything 
