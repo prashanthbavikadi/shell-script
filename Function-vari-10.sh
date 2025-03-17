@@ -25,4 +25,4 @@ dnf install mysql -y &>>$LOGFILE
 VALIDATE $?  " Installing is =mysql"
 
 dnf install git -y &>>$LOGFILE
-VALIDATE $?  " Installing is git"
+VALIDATE $?  " Installing is git."
