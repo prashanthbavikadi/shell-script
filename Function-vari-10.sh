@@ -21,8 +21,8 @@ then
 else 
     echo " you are in root access."
 fi
-dnf install mysql -y &>>>$LOGFILE
+dnf install mysql -y &>>$LOGFILE
 VALIDATE $?  " Installing is =mysql"
 
-dnf install git -y &>>>$LOGFILE
+dnf install git -y &>>$LOGFILE
 VALIDATE $?  " Installing is git"
