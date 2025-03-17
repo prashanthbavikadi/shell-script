@@ -6,12 +6,12 @@ SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
 VALIDATE (){
-if [ $? - ne 0]
+if [ $1 -ne 0]
 then 
-    echo " installation is ....FAILURE."
+    echo " $2 is ....FAILURE."
     exit 1
 else
-    echo " installation is ....SUCCESS."
+    echo " $2 is ....SUCCESS."
 fi
 
 }
@@ -26,7 +26,7 @@ fi
 
 
 dnf  install mysql -y &>>$LOGFILE
-VALIDATE $?  " Installing is mysql"
+VALIDATE $?  "Installing is mysql"
 
 dnf install git -y &>>$LOGFILE
-VALIDATE $?  " Installing is git"
+VALIDATE $?  "Installing is git"
