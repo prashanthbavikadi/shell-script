@@ -14,6 +14,8 @@ else
     echo " installation is ....SUCCESS."
 fi
 
+}
+
 if [ $USERID -ne 0 ]
 then
     echo " please run this command with root access."
@@ -21,7 +23,9 @@ then
 else 
     echo " you are in root access."
 fi
-dnf install mysql -y &>>$LOGFILE
+
+
+dnf  install mysql -y &>>$LOGFILE
 VALIDATE $?  " Installing is =mysql"
 
 dnf install git -y &>>$LOGFILE
