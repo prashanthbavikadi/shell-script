@@ -2,7 +2,7 @@
 
 $AGE=$1
  
-if [ $AGE -gt 18 ]
+if [ $AGE -ge 18 ]
 then
     echo " you are elgible for vote"
 else 
