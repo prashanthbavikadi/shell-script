@@ -1,9 +1,13 @@
 #!/bin/bash
+# Calculate the sum of two integers with pre initialize values
+# in a shell script
 
-NO1=$1
-NO2=$2
+# Initialize two variables with number
+a=10
+b=20
 
-SUM=$(expr $NO1 + $NO2)
+# Calculate sum
+sum=$(( $a + $b ))
 
-
-echo "Total of $NO1 and $NO2 is: $SUM"
+# Display the result
+echo "Sum is: $sum"
