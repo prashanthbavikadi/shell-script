@@ -1,9 +1,9 @@
  #!/bin/bash
 
 #declaring the variable
-person1=Anji #no space b/w person adn Anji
-person2=Prashanth
-person3=Sandeep
+person1=$1 #no space b/w person adn Anji
+person2=$2
+person3=$3
 
 #refering the variable
 
