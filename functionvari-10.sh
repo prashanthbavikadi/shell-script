@@ -5,7 +5,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 SCRIPT_NAME=$(echo $0 | cut -d "." -f1)
 LOGFILE=/tmp/$SCRIPT_NAME-$TIMESTAMP.log
 
-VADIDATE (){
+VALIDATE (){
 if [ $? - ne 0]
 then 
     echo " installation is ....FAILURE."
@@ -26,7 +26,7 @@ fi
 
 
 dnf  install mysql -y &>>$LOGFILE
-VALIDATE $?  " Installing is =mysql"
+VALIDATE $?  " Installing is mysql"
 
 dnf install git -y &>>$LOGFILE
-VALIDATE $?  " Installing is git."
+VALIDATE $?  " Installing is git"
