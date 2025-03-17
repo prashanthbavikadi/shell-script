@@ -7,7 +7,7 @@ n1=$1
 n2=$2
 
 # Calculate sum
-sum=$(( $1 + $2 ))
+sum=$(( $n1 + $n2 ))
 
 # Display the result
 echo "Sum is: $sum"
