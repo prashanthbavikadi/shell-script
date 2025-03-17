@@ -6,7 +6,8 @@ person2=$2
 person3=$3
 
 #IN this 
-#--> sh variable03.sh anji prashanth sandeep you need to give in putty to print names in place of p1 , p2 , p3 
+#--> sh variable03.sh (anji prashanth sandeep )you need to give in putty to print names in place of p1 , p2 , p3 
+# if you want to change name of the person , you change name in $1 , argumnets
 
 #refering the variable
 
