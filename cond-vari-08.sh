@@ -1,6 +1,7 @@
 #!/bin/bash
 
-$AGE=$1
+echo " enter you AGE"
+read AGE
  
 if [ $AGE -ge 18 ]
 then
