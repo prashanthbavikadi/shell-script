@@ -1,8 +1,8 @@
 #!/bin/bash
 
-$NUMBER=1$
+$NUMBER=$1
 
-if [ $NUMBER -ge 15 ]
+if [ $NUMBER -gt 15 ]
 then
     echo " Provided $NUMBER is greater that 15 "
 else    
