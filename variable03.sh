@@ -5,6 +5,9 @@ person1=$1 #no space b/w person adn Anji
 person2=$2
 person3=$3
 
+#IN this 
+#--> sh variable03.sh anji prashanth sandeep you need to give in putty to print names in place of p1 , p2 , p3 
+
 #refering the variable
 
  echo "$person1:  Hi $person2 how are you ?"
@@ -13,3 +16,4 @@ person3=$3
  echo "$person2: Hi $person1 im fine "
  echo "$person1: What are you preparing for "
  echo "$person2: im preaparing for AWS DEVOPS"
+
