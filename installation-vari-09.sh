@@ -1,8 +1,8 @@
 #!/bin/bash 
 
-USERID=$(id - u)
+USERID=$(id -u)
 
-if [ $USERID -ne 0]
+if [ $USERID -ne 0 ]
 then
     echo " please run this command with root access."
     exit 2   # manually exit if error comes.
