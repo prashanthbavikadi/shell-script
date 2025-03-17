@@ -3,11 +3,11 @@
 # in a shell script
 
 # Initialize two variables with number
-n1=$1
-n2=$2
+a=10
+b=20
 
 # Calculate sum
-sum=$(( $n1 + $n2 ))
+sum=$(( $a + $b ))
 
 # Display the result
 echo "Sum is: $sum"
