@@ -16,6 +16,6 @@ else
 fi       
 
 
-FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +7) 
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +7\n) 
 
 echo "files to delete: $FILES"
