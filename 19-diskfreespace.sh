@@ -2,7 +2,7 @@
 
 
 DISK_AVAILABLE=$(df -hT | grep xfs)
-DISK_THRESHOLD=1.0
+DISK_THRESHOLD=2.5G
 
 
 while IFS= read -r line
