@@ -15,4 +15,7 @@ else
      echo "$Y please create $SOURCE_DIRECTORY exits $N"
 fi       
 
-    
+
+FILES=$(find $SOURCE_DIRECTORY -name "*.log" -mtime +7) 
+
+echo "files to delete: $FILES"
