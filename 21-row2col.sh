@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_FILE=/ec2-user/col2row.txt
+SOURCE_FILE=ec2-user/shell-script/col2row.txt
 
 
 if [ -d  $SOURCE_FILE ]
