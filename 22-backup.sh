@@ -1,7 +1,7 @@
 #!/bin/bash
 
 SOURCE_DIRECTORY=/tmp/file.txt
-DEST_DIRECTORY=/tmp/dest.txt
+DEST_DIRECTORY=/home/ec2-user/dest.txt
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 R="\e[31m"
@@ -23,4 +23,4 @@ else
     echo "$Y please create $DEST_DIRECTORY exits $N"
 fi
 
-BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
+#BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
