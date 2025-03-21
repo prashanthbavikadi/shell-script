@@ -1,6 +1,6 @@
 #!/bin/bash
 
-SOURCE_DIRECTORY=/home/ec2-user/source
+SOURCE_DIRECTORY=/home/ec2-user/source/file
 DEST_DIRECTORY=/home/ec2-user/dest
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
@@ -16,7 +16,7 @@ else
     exit 1
 fi
 
-if [ -d $DEST_DIRECTORY]
+if [ -d $DEST_DIRECTORY ]
 then
     echo "Source directory $DEST_DIRECTORY does not exist."
     exit 1
