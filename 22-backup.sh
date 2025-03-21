@@ -22,3 +22,5 @@ then
 else    
     echo "$Y please create $DEST_DIRECTORY exits $N"
 fi
+
+BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
