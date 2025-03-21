@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-CPU_PROCESS=$(top  -o %CPU | head -n 12 | awk -F " " '{print $11F}' )
+CPU_PROCESS=$(ps -eo pid,ppid,%mem,%cpu,cmd --sort=-%mem | head -n 8 | awk -F " " '{print $4F}'  | cut -d "%" -f1 )
 
 echo "this  shows 5 CPU processing : $CPU_PROCESS "
 
