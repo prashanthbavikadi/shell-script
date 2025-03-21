@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SOURCE_DIRECTORY=/tmp/file.txt
-DEST_DIRECTORY=/home/ec2-user/dest.txt
+SOURCE_DIRECTORY=/tmp/file
+DEST_DIRECTORY=/home/ec2-user/dest
 TIMESTAMP=$(date +%F-%H-%M-%S)
 
 R="\e[31m"
