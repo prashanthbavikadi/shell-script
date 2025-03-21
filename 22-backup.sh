@@ -26,9 +26,9 @@ fi
 
 BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
 
-BACKUP_PATH="$DEST_DIR/$BACKUP_FILE
+BACKUP_PATH="$DEST_DIRECTORY/$BACKUP_FILE
 
-tar -czf "$BACKUP_PATH" -C "$SOURCE_DIR" .
+tar -czf "$BACKUP_PATH" -C "$SOURCE_DIRECTORY" .
 
 # Check if the tar command succeeded
 if [ $? -eq 0 ]; then
