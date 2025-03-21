@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-CPU_PROCESS=$(top  -o %CPU | head -n 12 )
+CPU_PROCESS=$(top  -o %CPU | head -n 12 | awk -F " " '{print $10F}' )
 
-echo "this  shows 5 CPU processing : $CPU_PROCESS | awk -F " " '{print $10F}'"
+echo "this  shows 5 CPU processing : $CPU_PROCESS "
 
 
 #while IFS= read -r line
