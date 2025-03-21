@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CPU_5PROCESS=(top  -o %CPU)
+CPU_5PROCESS=$(top  -o %CPU)
 
 while IFS= read -r line
 do 
