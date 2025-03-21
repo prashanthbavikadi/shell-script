@@ -1,4 +1,0 @@
-name    course  batch
-sandep   devo    1
-bunny    aws     2
-prashu   cloud   3
