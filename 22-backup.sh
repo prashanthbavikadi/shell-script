@@ -24,4 +24,4 @@ else
     echo "$Y please create $DEST_DIRECTORY does not exits $N"
 fi
 
-#BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
+BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
