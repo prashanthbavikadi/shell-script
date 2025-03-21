@@ -24,4 +24,16 @@ else
     echo "$Y please create $DEST_DIRECTORY does not exits $N"
 fi
 
-Bbackupfile="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
+BACKUP_FILE="backup_$( "$SOURCE_DIRECTORY ")_$TIMESTAMP.tar.gz
+
+BACKUP_PATH="$DEST_DIR/$BACKUP_FILE
+
+tar -czf "$BACKUP_PATH" -C "$SOURCE_DIR" .
+
+# Check if the tar command succeeded
+if [ $? -eq 0 ]; then
+    echo "Backup successful: $BACKUP_PATH"
+else
+    echo "Error: Backup failed."
+    exit 1
+fi
