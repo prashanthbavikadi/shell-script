@@ -23,6 +23,7 @@ while IFS= read -r line                                                        #
 do
   echo "file_name=$line"
   echo "number_of_lines=$(wc --lines < $line)"                                      # to open the text file that that why we are writing here {--line < $line} remeber this ...
-  echo "number_of_words occurance=$( tr -s ' ' '\n' < $line | grep file | wc -l)"
+  echo "number_of_words occurance=$( cat $line | tr -c '[:alnum:]' '[\n*]' | tr '[:upper:]' '[:lower:]' | sort | uniq -c | sort -nr | head -n 5)"
 
 done <<< $FILES
+
