@@ -31,7 +31,8 @@ BACKUP_PATH="$DEST_DIRECTORY/$BACKUP_FILE
 tar -czf "$BACKUP_PATH" -C "$SOURCE_DIRECTORY" .
 
 # Check if the tar command succeeded
-if [ $? -eq 0 ]; then
+if [ $? -eq 0 ];
+then
     echo "Backup successful: $BACKUP_PATH"
 else
     echo "Error: Backup failed."
