@@ -27,3 +27,18 @@ do
 
 done <<< $FILES
 
+
+#tr -cs: '[:alnum:]' '[\n*]':
+#Replaces anything that's not a letter or a number with a newline, effectively splitting the text into words.
+
+#sort:
+#Sorts the words alphabetically, which is required for uniq to count occurrences properly.
+
+#@uniq -c:
+#Counts the occurrences of each word.
+
+#sort -nr:
+#Sorts the output numerically in reverse order (most frequent words come first).
+
+#head -n 5:
+#Displays only the top 5 most frequent words

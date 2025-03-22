@@ -1,11 +1,18 @@
 #!/bin/bash
 
-SOURCE_FILE=ec2-user/shell-script/col2row.txt
+SOURCE_FILE=/tmp/col2row.txt
 
 
-if [ -d  $SOURCE_FILE ]
+if [ -d $SOURCE_DIRECTORY ]
 then
-     echo "$G source directory exits $N"
+    echo -e "$G Source directory exists $N"
 else
-     echo "$Y please create $SOURCE_FILE exits $N"
-fi       
+    echo -e "$R Please make sure $SOURCE_DIRECTORY exists $N"
+    exit 1
+fi
+
+
+
+
+
+
